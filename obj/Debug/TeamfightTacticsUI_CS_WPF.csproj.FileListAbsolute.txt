@@ -1,0 +1,15 @@
+C:\Users\huanl\source\repos\TeamfightTacticsUI_CS_WPF\TeamfightTacticsUI_CS_WPF\bin\Debug\TeamfightTacticsUI_CS_WPF.exe.config
+C:\Users\huanl\source\repos\TeamfightTacticsUI_CS_WPF\TeamfightTacticsUI_CS_WPF\bin\Debug\TeamfightTacticsUI_CS_WPF.exe
+C:\Users\huanl\source\repos\TeamfightTacticsUI_CS_WPF\TeamfightTacticsUI_CS_WPF\bin\Debug\TeamfightTacticsUI_CS_WPF.pdb
+C:\Users\huanl\source\repos\TeamfightTacticsUI_CS_WPF\TeamfightTacticsUI_CS_WPF\obj\Debug\TeamfightTacticsUI_CS_WPF.csprojResolveAssemblyReference.cache
+C:\Users\huanl\source\repos\TeamfightTacticsUI_CS_WPF\TeamfightTacticsUI_CS_WPF\obj\Debug\MainWindow.g.cs
+C:\Users\huanl\source\repos\TeamfightTacticsUI_CS_WPF\TeamfightTacticsUI_CS_WPF\obj\Debug\App.g.cs
+C:\Users\huanl\source\repos\TeamfightTacticsUI_CS_WPF\TeamfightTacticsUI_CS_WPF\obj\Debug\TeamfightTacticsUI_CS_WPF_MarkupCompile.cache
+C:\Users\huanl\source\repos\TeamfightTacticsUI_CS_WPF\TeamfightTacticsUI_CS_WPF\obj\Debug\TeamfightTacticsUI_CS_WPF_MarkupCompile.lref
+C:\Users\huanl\source\repos\TeamfightTacticsUI_CS_WPF\TeamfightTacticsUI_CS_WPF\obj\Debug\MainWindow.baml
+C:\Users\huanl\source\repos\TeamfightTacticsUI_CS_WPF\TeamfightTacticsUI_CS_WPF\obj\Debug\TeamfightTacticsUI_CS_WPF.g.resources
+C:\Users\huanl\source\repos\TeamfightTacticsUI_CS_WPF\TeamfightTacticsUI_CS_WPF\obj\Debug\TeamfightTacticsUI_CS_WPF.Properties.Resources.resources
+C:\Users\huanl\source\repos\TeamfightTacticsUI_CS_WPF\TeamfightTacticsUI_CS_WPF\obj\Debug\TeamfightTacticsUI_CS_WPF.csproj.GenerateResource.Cache
+C:\Users\huanl\source\repos\TeamfightTacticsUI_CS_WPF\TeamfightTacticsUI_CS_WPF\obj\Debug\TeamfightTacticsUI_CS_WPF.csproj.CoreCompileInputs.cache
+C:\Users\huanl\source\repos\TeamfightTacticsUI_CS_WPF\TeamfightTacticsUI_CS_WPF\obj\Debug\TeamfightTacticsUI_CS_WPF.exe
+C:\Users\huanl\source\repos\TeamfightTacticsUI_CS_WPF\TeamfightTacticsUI_CS_WPF\obj\Debug\TeamfightTacticsUI_CS_WPF.pdb
