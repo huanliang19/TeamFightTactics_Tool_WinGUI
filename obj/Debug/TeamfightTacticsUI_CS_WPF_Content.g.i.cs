@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("properties/tear_of_the_goddess_item.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("tftui_app_background.png")]
 
 

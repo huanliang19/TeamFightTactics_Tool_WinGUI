@@ -62,6 +62,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ItemChart.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -98,6 +99,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Tear_of_the_Goddess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TFTUI_App_Background.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

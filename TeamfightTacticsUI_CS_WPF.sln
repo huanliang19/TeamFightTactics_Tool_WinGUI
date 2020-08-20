@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamfightTacticsUI_CS_WPF", "TeamfightTacticsUI_CS_WPF.csproj", "{BD236737-1F4B-41E7-AF4E-44E917F07673}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD236737-1F4B-41E7-AF4E-44E917F07673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD236737-1F4B-41E7-AF4E-44E917F07673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD236737-1F4B-41E7-AF4E-44E917F07673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD236737-1F4B-41E7-AF4E-44E917F07673}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F7FBAB8-BAC4-4693-A131-6626C30116F7}
+	EndGlobalSection
+EndGlobal

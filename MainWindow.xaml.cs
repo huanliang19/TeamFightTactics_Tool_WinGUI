@@ -23,26 +23,36 @@ namespace TeamfightTacticsUI_CS_WPF
         public MainWindow()
         {
             InitializeComponent();
-
-            //Sets up Buttons for Component items
-            for (int i = 1; i < 10; i++)
+            MouseDown += Window_MouseDown;
+            void Window_MouseDown(object sender, MouseButtonEventArgs e)
             {
-                Button compButton = new Button();
-          
-                var brush = new ImageBrush(
-                            new BitmapImage(
-                            new Uri(@"C:\Users\huanl\source\repos\TeamfightTacticsUI_CS_WPF\TeamfightTacticsUI_CS_WPF\Images\Tear_of_the_Goddess.png", UriKind.Relative)));
-
-                compButton.Name = "Tear_of_the_Goddess_btn";
-                compButton.Background = brush;
-                compButton.Width = 50;
-                compButton.Height = 50;
-                compButton.Margin = new Thickness(5);
-                compButton.BorderThickness = new Thickness(2);
-                Grid.SetColumn(compButton, i);
-                Grid.SetRow(compButton, 1);
-                ComponentItems.Children.Add(compButton);
+                if (e.ChangedButton == MouseButton.Left)
+                    DragMove();
             }
+
+            //Sets up Buttons for Complete items
+            /*            for (int i = 0; i < 45; i++)
+                        {
+                            Button compButton = new Button();
+
+                            var brush = new ImageBrush(
+                                        new BitmapImage(
+                                        new Uri(@"C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\Images\Tear_of_the_Goddess.png", UriKind.Relative)));
+
+                            compButton.Name = "Tear_of_the_Goddess_btn" + i.ToString();
+                            compButton.Background = brush;
+                            compButton.Width = 50;
+                            compButton.Height = 50;
+                            compButton.Margin = new Thickness(3);
+                            compButton.BorderThickness = new Thickness(2);
+                            Grid.SetColumn(compButton, (i%9)+2);
+                            Grid.SetRow(compButton, (i/9)+1);
+                            CompletedItems.Children.Add(compButton);
+                        }*/
+
+            ItemChart itemChart = new ItemChart();
+
+
         }
     }
 }

@@ -5,29 +5,115 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TeamfightTacticsUI_CS_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="110" Width="564">
+        Title="MainWindow" Height="500" Width="670" ResizeMode="NoResize" Topmost="True" WindowStyle="None" AllowsTransparency="True" UseLayoutRounding="False" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+    <Window.Background>
+        <ImageBrush ImageSource="TFTUI_App_Background.png" Stretch="Uniform" AlignmentX="Left" AlignmentY="Top">
+        </ImageBrush>
+    </Window.Background>
 
-    <Grid Name="ComponentItems">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="10"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="10"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="10"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="10"/>
-        </Grid.RowDefinitions>
+    <Grid>
+        <Grid Name="ComponentItems">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="88"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="15"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
 
+            <Button x:Name="Tear" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1" MinWidth="50" MinHeight="50" BorderThickness="1,1,1,1" Margin="7,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/Tear_of_the_Goddess.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="btn2" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="2" MinWidth="50" MinHeight="50" BorderThickness="1,1,1,1" Margin="7,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/Tear_of_the_Goddess.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="btn3" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="3" MinWidth="50" MinHeight="50" BorderThickness="1,1,1,1" Margin="7,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/Tear_of_the_Goddess.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="btn4" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="4" MinWidth="50" MinHeight="50" BorderThickness="1,1,1,1" Margin="7,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/Tear_of_the_Goddess.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="btn5" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="5" MinWidth="50" MinHeight="50" BorderThickness="1,1,1,1" Margin="7,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/Tear_of_the_Goddess.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="btn6" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="6" MinWidth="50" MinHeight="50" BorderThickness="1,1,1,1" Margin="7,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/Tear_of_the_Goddess.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="btn7" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="7" MinWidth="50" MinHeight="50" BorderThickness="1,1,1,1" Margin="7,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/Tear_of_the_Goddess.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="btn8" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="8" MinWidth="50" MinHeight="50" BorderThickness="1,1,1,1" Margin="7,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/Tear_of_the_Goddess.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="btn9" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="9" MinWidth="50" MinHeight="50" BorderThickness="1,1,1,1" Margin="7,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/Tear_of_the_Goddess.png"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+
+        <Grid Name="CompletedItems">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="130"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="15"/>
+            </Grid.RowDefinitions>
+
+        </Grid>
     </Grid>
 </Window>
