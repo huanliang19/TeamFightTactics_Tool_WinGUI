@@ -118,7 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Brawlers_Gloves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Brawlers_Gloves.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="B_F_Sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\B_F_Sword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chain_Vest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Chain_Vest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Giants_Belt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Giants_Belt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Golden_Spatula" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Golden_Spatula.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Molediver_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Molediver_Icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Needlessly_Large_Rod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Needlessly_Large_Rod.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Negatron_Cloak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Negatron_Cloak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Recurve_Bow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Recurve_Bow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Tear_of_the_Goddess" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Tear_of_the_Goddess.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TFTUI_App_Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\TFTUI_App_Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

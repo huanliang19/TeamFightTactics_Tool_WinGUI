@@ -3,6 +3,21 @@ using System.ComponentModel;
 using System.Windows;
 using System.Runtime.CompilerServices;
 
+/*using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;*/
+
 namespace TeamfightTacticsUI_CS_WPF
 {
     /// <summary>
@@ -46,15 +61,15 @@ namespace TeamfightTacticsUI_CS_WPF
 
         }
 
-        private int _boundNumber;
-        public int BoundNumber
+        private string _boundState;
+        public string BoundNumber
         {
-            get { return _boundNumber; }
+            get { return "True"; }
             set
             {
-                if (_boundNumber != value)
+                if (_boundState != value)
                 {
-                    _boundNumber = value;
+                    _boundState = value;
                     OnPropertyChanged();
                 }
 

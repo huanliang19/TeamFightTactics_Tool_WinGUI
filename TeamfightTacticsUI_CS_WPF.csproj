@@ -91,6 +91,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Images\Negatron_Cloak.png" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -110,6 +111,33 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Needlessly_Large_Rod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Recurve_Bow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\TFTUI_App_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Molediver_Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\B_F_Sword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Chain_Vest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Golden_Spatula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Giants_Belt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Brawlers_Gloves.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
