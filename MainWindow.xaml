@@ -11,6 +11,14 @@
         </ImageBrush>
     </Window.Background>
 
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
     <Grid>
         <Grid Name="ComponentItems">
             <Grid.ColumnDefinitions>
@@ -33,55 +41,55 @@
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
 
-            <Button x:Name="Tear" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1" MinWidth="50" MinHeight="50" BorderThickness="1,1,1,1" Margin="7,0">
+            <Button x:Name="B_F_Sword_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="1">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/Tear_of_the_Goddess.png"/>
                 </Button.Background>
             </Button>
 
-            <Button x:Name="btn2" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="2" MinWidth="50" MinHeight="50" BorderThickness="1,1,1,1" Margin="7,0">
+            <Button x:Name="Chain_vest_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="2">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/Tear_of_the_Goddess.png"/>
                 </Button.Background>
             </Button>
 
-            <Button x:Name="btn3" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="3" MinWidth="50" MinHeight="50" BorderThickness="1,1,1,1" Margin="7,0">
+            <Button x:Name="Giants_Belt_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="3">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/Tear_of_the_Goddess.png"/>
                 </Button.Background>
             </Button>
 
-            <Button x:Name="btn4" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="4" MinWidth="50" MinHeight="50" BorderThickness="1,1,1,1" Margin="7,0">
+            <Button x:Name="Needlessly_Large_Rod_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="4">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/Tear_of_the_Goddess.png"/>
                 </Button.Background>
             </Button>
 
-            <Button x:Name="btn5" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="5" MinWidth="50" MinHeight="50" BorderThickness="1,1,1,1" Margin="7,0">
+            <Button x:Name="Negatron_Cloak_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="5">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/Tear_of_the_Goddess.png"/>
                 </Button.Background>
             </Button>
 
-            <Button x:Name="btn6" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="6" MinWidth="50" MinHeight="50" BorderThickness="1,1,1,1" Margin="7,0">
+            <Button x:Name="Recurve_Bow_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="6">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/Tear_of_the_Goddess.png"/>
                 </Button.Background>
             </Button>
 
-            <Button x:Name="btn7" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="7" MinWidth="50" MinHeight="50" BorderThickness="1,1,1,1" Margin="7,0">
+            <Button x:Name="Golden_Spatula_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="7">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/Tear_of_the_Goddess.png"/>
                 </Button.Background>
             </Button>
 
-            <Button x:Name="btn8" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="8" MinWidth="50" MinHeight="50" BorderThickness="1,1,1,1" Margin="7,0">
+            <Button x:Name="Tear_of_the_Goddess_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="8">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/Tear_of_the_Goddess.png"/>
                 </Button.Background>
             </Button>
 
-            <Button x:Name="btn9" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Grid.Column="9" MinWidth="50" MinHeight="50" BorderThickness="1,1,1,1" Margin="7,0">
+            <Button x:Name="Brawlers_Gloves_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="9">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/Tear_of_the_Goddess.png"/>
                 </Button.Background>
@@ -90,7 +98,7 @@
 
         <Grid Name="CompletedItems">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="130"/>
+                <ColumnDefinition Width="120"/>
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="auto"/>
@@ -111,7 +119,7 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
-                <RowDefinition Height="15"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
         </Grid>
