@@ -1,14 +1,9 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Schema;
 
 namespace TeamfightTacticsUI_CS_WPF
 {
-    public class ItemChart
-    {
+	public class ItemChart
+	{
 		private static int MAX_ITEM_COUNT = 9;
 		private static int MAX_FULL_ITEM_COUNT = 45;
 		private static int itemTotal = 0;
@@ -55,17 +50,30 @@ namespace TeamfightTacticsUI_CS_WPF
 			UpdateChart();
 		}
 
-		public void RemoveItem(int itemIndex)
+		public void RemoveFullItem(int itemIndex)
+		{
+			int x = 0;
+			int y = itemIndex;
+			while (y > x)
+			{
+				x++;
+				y -= x;
+			}
+			RemoveItem(y);
+			RemoveItem(x);
+			UpdateChart();
+		}
+
+		private void RemoveItem(int itemIndex)
 		{
 			if (itemCount[itemIndex] > 0)
 			{
 				itemCount[itemIndex]--;
 				itemTotal--;
-				UpdateChart();
 			}
 		}
 
-		void Reset()
+		public void Reset()
 		{
 			foreach (int i in itemCount)
 			{

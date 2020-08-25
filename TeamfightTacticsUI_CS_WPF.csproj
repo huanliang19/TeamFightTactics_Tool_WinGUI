@@ -139,9 +139,6 @@
     <Resource Include="Images\Brawlers_Gloves.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Image1.bmp" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\B_F_Sword.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -169,6 +166,144 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Tear_of_the_Goddess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\completeItem_39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Reset.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

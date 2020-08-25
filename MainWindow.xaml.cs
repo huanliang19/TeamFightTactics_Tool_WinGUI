@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Windows.Input;
 using System.ComponentModel;
-using System.Windows;
 using System.Runtime.CompilerServices;
+using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Security.Cryptography.X509Certificates;
 
 namespace TeamfightTacticsUI_CS_WPF
 {
@@ -35,22 +34,30 @@ namespace TeamfightTacticsUI_CS_WPF
             {
                 Button completeButton = new Button();
                 buttonArr[i] = completeButton;
+                completeButton.Name = "completeItem_" + i.ToString();
                 ImageBrush brush = new ImageBrush(
                             new BitmapImage(
-                            new Uri(@"C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\Images\Tear_of_the_Goddess.png", UriKind.Relative)));
-                //fix name to strings not just integer string
-                completeButton.Name = "completeItem_" + i.ToString();
-                /////////////////////////////////////////////
+                            new Uri(@"C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\Images\" + completeButton.Name + ".png", UriKind.Relative)));
                 completeButton.Background = brush;
                 completeButton.Width = 50;
                 completeButton.Height = 50;
                 completeButton.Margin = new Thickness(3);
                 completeButton.BorderThickness = new Thickness(2);
                 completeButton.Visibility = Visibility.Collapsed;
+                completeButton.Click += new RoutedEventHandler(completeItemClick);
                 Grid.SetColumn(completeButton, 0);
                 Grid.SetColumn(completeButton, 0);
                 CompletedItems.Children.Add(completeButton);
             }
+        }
+
+        void completeItemClick(object sender, RoutedEventArgs e)
+        {
+            Button btn = (Button)sender;
+            string[] tokens = btn.Name.Split('_');
+            int buttonNumber_int = int.Parse(tokens[1]);
+            itemChart.RemoveFullItem(buttonNumber_int);
+            updateFullItems(buttonArr, itemChart.GetItems());
         }
 
         void componentItemClick(object sender, RoutedEventArgs e)
@@ -58,6 +65,9 @@ namespace TeamfightTacticsUI_CS_WPF
             Button btn = (Button)sender;
             switch (btn.Name)
             {
+                case "Reset":
+                    itemChart.Reset();
+                    break;
                 case "B_F_Sword_btn":
                     itemChart.AddItem(0);
                     break;
@@ -93,8 +103,9 @@ namespace TeamfightTacticsUI_CS_WPF
         {
             int x = 1;
             int y = 1;
-            for(int i = 0; i < 45; i++)
+            for (int i = 0; i < 45; i++)
             {
+                buttonArr[i].Visibility = Visibility.Collapsed;
                 if (componentItemArr[i] > 0)
                 {
                     Grid.SetColumn(buttonArr[i], x);
@@ -106,10 +117,6 @@ namespace TeamfightTacticsUI_CS_WPF
                         y++;
                     }
                     buttonArr[i].Visibility = Visibility.Visible;
-                }
-                else
-                {
-                    buttonArr[i].Visibility = Visibility.Collapsed;
                 }
             }
 
