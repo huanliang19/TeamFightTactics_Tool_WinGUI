@@ -68,6 +68,9 @@ namespace TeamfightTacticsUI_CS_WPF
                 case "Reset":
                     itemChart.Reset();
                     break;
+                case "Exit":
+                    Application.Current.Shutdown();
+                    break;
                 case "B_F_Sword_btn":
                     itemChart.AddItem(0);
                     break;

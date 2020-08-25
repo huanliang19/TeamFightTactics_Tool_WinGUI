@@ -305,5 +305,8 @@
   <ItemGroup>
     <Resource Include="Images\Reset.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\exit.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

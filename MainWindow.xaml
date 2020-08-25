@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TeamfightTacticsUI_CS_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="670" ResizeMode="NoResize" Topmost="True" WindowStyle="None" AllowsTransparency="True" UseLayoutRounding="False" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+        Title="MainWindow" Height="500" Width="676" ResizeMode="NoResize" Topmost="True" WindowStyle="None" AllowsTransparency="True" UseLayoutRounding="False" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
     <Window.Background>
         <ImageBrush ImageSource="TFTUI_App_Background.png" Stretch="Uniform" AlignmentX="Left" AlignmentY="Top">
         </ImageBrush>
@@ -21,6 +21,9 @@
 
     <Grid>
         <Grid Name="ComponentItems">
+            <Grid.Background>
+                <ImageBrush/>
+            </Grid.Background>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="88"/>
                 <ColumnDefinition Width="auto"/>
@@ -42,13 +45,18 @@
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
 
-            <Button x:Name="Reset" Grid.Row="1" Grid.Column="0" Click="componentItemClick" HorizontalAlignment="Right" Width="37" Height="37" Margin="0,0,5,0">
+            <Button x:Name="Reset" Grid.Row="1" Grid.Column="0" Click="componentItemClick" HorizontalAlignment="Right" Width="37" Height="37" Margin="0,0,6,0">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/Reset.png"/>
                 </Button.Background>
             </Button>
 
-
+            <Button x:Name="Exit" Grid.Row="0" Grid.Column="10" Click="componentItemClick" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="10" Height="10" Margin="0,0,2,0">
+                <Button.Background>
+                    <ImageBrush ImageSource="Images/exit.png"/>
+                </Button.Background>
+            </Button>
+            
             <Button x:Name="B_F_Sword_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="1" Click="componentItemClick">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/B_F_Sword.png"/>
