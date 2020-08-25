@@ -10,6 +10,12 @@
         <Setter Property="BorderThickness" Value="1,1,1,1" />
         <Setter Property= "Margin" Value="7,0"/>
         <Setter Property="ClickMode" Value ="Press"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="Foreground" Value="#A6FCFF"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="VerticalContentAlignment" Value="Bottom"/>
     </Style>
 
 </ResourceDictionary>

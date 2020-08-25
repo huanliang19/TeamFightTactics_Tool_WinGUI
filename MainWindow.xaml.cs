@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
@@ -58,6 +59,7 @@ namespace TeamfightTacticsUI_CS_WPF
             int buttonNumber_int = int.Parse(tokens[1]);
             itemChart.RemoveFullItem(buttonNumber_int);
             updateFullItems(buttonArr, itemChart.GetItems());
+            updateComponentItems();
         }
 
         void componentItemClick(object sender, RoutedEventArgs e)
@@ -100,8 +102,32 @@ namespace TeamfightTacticsUI_CS_WPF
                     break;
             }
             updateFullItems(buttonArr, itemChart.GetItems());
+            updateComponentItems();
         }
+        /*        public class ButtonBindings : INotifyPropertyChanged
+                {
+                    public event PropertyChangedEventHandler PropertyChanged;
 
+                    private int _Value;
+                    public int Value
+                    {
+                        get { return _Value; }
+                        set { Value = value; OnPropertyChanged("Value"); }
+                    }
+
+                    void OnPropertyChanged(string propertyName)
+                    {
+                        var handler = PropertyChanged;
+                        if (handler != null)
+                        {
+                            handler(this, new PropertyChangedEventArgs(propertyName));
+                        }
+                    }
+            }
+                ObservableCollection<ButtonBindings> Arr {
+                    get; 
+                    set; 
+                }*/
         void updateFullItems(Button[] buttonArr, int[] componentItemArr)
         {
             int x = 1;
@@ -122,29 +148,153 @@ namespace TeamfightTacticsUI_CS_WPF
                     buttonArr[i].Visibility = Visibility.Visible;
                 }
             }
-
         }
 
-        private string _boundState;
-
-        public string BoundState
+        //try array of binding variables using Observable Collections updated by itemChart.getComponentItems()
+        private int _boundState0;
+        private int _boundState1;
+        private int _boundState2;
+        private int _boundState3;
+        private int _boundState4;
+        private int _boundState5;
+        private int _boundState6;
+        private int _boundState7;
+        private int _boundState8;
+        public int BoundState0
         {
-            get { return "_boundState"; }
+            get { return _boundState0; }
             set
             {
-                if (_boundState != value)
+                if (_boundState0 != value)
                 {
-                    _boundState = value;
+                    _boundState0 = value;
                     OnPropertyChanged();
                 }
 
             }
         }
+        public int BoundState1
+        {
+            get { return _boundState1; }
+            set
+            {
+                if (_boundState1 != value)
+                {
+                    _boundState1 = value;
+                    OnPropertyChanged();
+                }
 
+            }
+        }
+        public int BoundState2
+        {
+            get { return _boundState2; }
+            set
+            {
+                if (_boundState2 != value)
+                {
+                    _boundState2 = value;
+                    OnPropertyChanged();
+                }
+
+            }
+        }
+        public int BoundState3
+        {
+            get { return _boundState3; }
+            set
+            {
+                if (_boundState3 != value)
+                {
+                    _boundState3 = value;
+                    OnPropertyChanged();
+                }
+
+            }
+        }
+        public int BoundState4
+        {
+            get { return _boundState4; }
+            set
+            {
+                if (_boundState4 != value)
+                {
+                    _boundState4 = value;
+                    OnPropertyChanged();
+                }
+
+            }
+        }
+        public int BoundState5
+        {
+            get { return _boundState5; }
+            set
+            {
+                if (_boundState5 != value)
+                {
+                    _boundState5 = value;
+                    OnPropertyChanged();
+                }
+
+            }
+        }
+        public int BoundState6
+        {
+            get { return _boundState6; }
+            set
+            {
+                if (_boundState6 != value)
+                {
+                    _boundState6 = value;
+                    OnPropertyChanged();
+                }
+
+            }
+        }
+        public int BoundState7
+        {
+            get { return _boundState7; }
+            set
+            {
+                if (_boundState7 != value)
+                {
+                    _boundState7 = value;
+                    OnPropertyChanged();
+                }
+
+            }
+        }
+        public int BoundState8
+        {
+            get { return _boundState8; }
+            set
+            {
+                if (_boundState8 != value)
+                {
+                    _boundState8 = value;
+                    OnPropertyChanged();
+                }
+
+            }
+        }
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        void updateComponentItems()
+        {
+            int[] compArr = itemChart.GetComponentItems();
+            BoundState0 = compArr[0];
+            BoundState1 = compArr[1];
+            BoundState2 = compArr[2];
+            BoundState3 = compArr[3];
+            BoundState4 = compArr[4];
+            BoundState5 = compArr[5];
+            BoundState6 = compArr[6];
+            BoundState7 = compArr[7];
+            BoundState8 = compArr[8];
         }
     }
 }

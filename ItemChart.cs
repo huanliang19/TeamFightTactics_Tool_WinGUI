@@ -43,6 +43,16 @@ namespace TeamfightTacticsUI_CS_WPF
 			return retArr;
 		}
 
+		public int[] GetComponentItems()
+		{
+			int[] retArr = new int[MAX_ITEM_COUNT];
+			for (int i = 0; i < MAX_ITEM_COUNT; i++)
+			{
+				retArr[i] = itemCount[i];
+			}
+			return retArr;
+		}
+
 		public void AddItem(int itemIndex)
 		{
 			itemCount[itemIndex]++;

@@ -56,56 +56,56 @@
                     <ImageBrush ImageSource="Images/exit.png"/>
                 </Button.Background>
             </Button>
-            
-            <Button x:Name="B_F_Sword_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="1" Click="componentItemClick">
+
+            <Button x:Name="B_F_Sword_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="1" Click="componentItemClick" Content="{Binding Path= BoundState0, Mode = OneWay}">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/B_F_Sword.png"/>
                 </Button.Background>
             </Button>
 
-            <Button x:Name="Chain_Vest_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="2" Click="componentItemClick">
+            <Button x:Name="Chain_Vest_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="2" Click="componentItemClick" Content="{Binding Path= BoundState1, Mode = OneWay}">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/Chain_Vest.png"/>
                 </Button.Background>
             </Button>
 
-            <Button x:Name="Giants_Belt_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="3" Click="componentItemClick">
+            <Button x:Name="Giants_Belt_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="3" Click="componentItemClick" Content="{Binding Path= BoundState2, Mode = OneWay}">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/Giants_Belt.png"/>
                 </Button.Background>
             </Button>
 
-            <Button x:Name="Needlessly_Large_Rod_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="4" Click="componentItemClick">
+            <Button x:Name="Needlessly_Large_Rod_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="4" Click="componentItemClick" Content="{Binding Path= BoundState3, Mode = OneWay}">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/Needlessly_Large_Rod.png"/>
                 </Button.Background>
             </Button>
 
-            <Button x:Name="Negatron_Cloak_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="5" Click="componentItemClick">
+            <Button x:Name="Negatron_Cloak_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="5" Click="componentItemClick" Content="{Binding Path= BoundState4, Mode = OneWay}">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/Negatron_Cloak.png"/>
                 </Button.Background>
             </Button>
 
-            <Button x:Name="Recurve_Bow_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="6" Click="componentItemClick">
+            <Button x:Name="Recurve_Bow_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="6" Click="componentItemClick" Content="{Binding Path= BoundState5, Mode = OneWay}">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/Recurve_Bow.png"/>
                 </Button.Background>
             </Button>
 
-            <Button x:Name="Golden_Spatula_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="7" Click="componentItemClick">
+            <Button x:Name="Golden_Spatula_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="7" Click="componentItemClick" Content="{Binding Path= BoundState6, Mode = OneWay}">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/Golden_Spatula.png"/>
                 </Button.Background>
             </Button>
 
-            <Button x:Name="Tear_of_the_Goddess_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="8" Click="componentItemClick">
+            <Button x:Name="Tear_of_the_Goddess_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="8" Click="componentItemClick" Content="{Binding Path= BoundState7, Mode = OneWay}">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/Tear_of_the_Goddess.png"/>
                 </Button.Background>
             </Button>
 
-            <Button x:Name="Brawlers_Gloves_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="9" Click="componentItemClick">
+            <Button x:Name="Brawlers_Gloves_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="9" Click="componentItemClick" Content="{Binding Path= BoundState8, Mode = OneWay}">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/Brawlers_Gloves.png"/>
                 </Button.Background>
