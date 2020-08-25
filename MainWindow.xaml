@@ -34,6 +34,7 @@
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
+            
             <Grid.RowDefinitions>
                 <RowDefinition Height="10"/>
                 <RowDefinition Height="auto"/>
@@ -41,7 +42,7 @@
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
 
-            <Button x:Name="B_F_Sword_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="1" Visibility="{Binding Path=BoundState, Mode=TwoWay}">
+            <Button x:Name="B_F_Sword_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="1" Click="componentItemClick" ClickMode="Press">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/B_F_Sword.png"/>
                 </Button.Background>
@@ -53,7 +54,7 @@
                 </Button.Background>
             </Button>
 
-            <Button x:Name="Giants_Belt_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="3">
+            <Button x:Name="Giants_Belt_btn" Style="{StaticResource ComponentItemButton}" Grid.Row="1" Grid.Column="3" Click="componentItemClick" ClickMode="Press">
                 <Button.Background>
                     <ImageBrush ImageSource="Images/Giants_Belt.png"/>
                 </Button.Background>

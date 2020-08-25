@@ -91,7 +91,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Images\Negatron_Cloak.png" />
+    <Resource Include="Images\Negatron_Cloak.png" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -99,9 +99,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Properties\Tear_of_the_Goddess.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Tear_of_the_Goddess.png" />
@@ -113,31 +110,65 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\Needlessly_Large_Rod.png" />
+    <Resource Include="Images\Needlessly_Large_Rod.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\Recurve_Bow.png" />
+    <Resource Include="Images\Recurve_Bow.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\TFTUI_App_Background.png" />
+    <Resource Include="Images\TFTUI_App_Background.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\Molediver_Icon.ico" />
+    <Resource Include="Images\Molediver_Icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\B_F_Sword.png" />
+    <Resource Include="Images\B_F_Sword.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\Chain_Vest.png" />
+    <Resource Include="Images\Chain_Vest.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\Golden_Spatula.png" />
+    <Resource Include="Images\Golden_Spatula.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\Giants_Belt.png" />
+    <Resource Include="Images\Giants_Belt.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\Brawlers_Gloves.png" />
+    <Resource Include="Images\Brawlers_Gloves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\B_F_Sword.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Brawlers_Gloves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Chain_Vest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Giants_Belt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Golden_Spatula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Needlessly_Large_Rod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Negatron_Cloak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Recurve_Bow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Tear_of_the_Goddess.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

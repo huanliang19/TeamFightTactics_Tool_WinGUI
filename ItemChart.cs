@@ -48,14 +48,14 @@ namespace TeamfightTacticsUI_CS_WPF
 			return retArr;
 		}
 
-		void AddItem(int itemIndex)
+		public void AddItem(int itemIndex)
 		{
 			itemCount[itemIndex]++;
 			itemTotal++;
 			UpdateChart();
 		}
 
-		void RemoveItem(int itemIndex)
+		public void RemoveItem(int itemIndex)
 		{
 			if (itemCount[itemIndex] > 0)
 			{

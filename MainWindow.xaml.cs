@@ -1,22 +1,12 @@
-﻿using System.Windows.Input;
+﻿using System;
+using System.Windows.Input;
 using System.ComponentModel;
 using System.Windows;
 using System.Runtime.CompilerServices;
-
-/*using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;*/
+using System.Security.Cryptography.X509Certificates;
 
 namespace TeamfightTacticsUI_CS_WPF
 {
@@ -29,6 +19,7 @@ namespace TeamfightTacticsUI_CS_WPF
         {
             DataContext = this;
             InitializeComponent();
+
             MouseDown += Window_MouseDown;
             void Window_MouseDown(object sender, MouseButtonEventArgs e)
             {
@@ -36,35 +27,100 @@ namespace TeamfightTacticsUI_CS_WPF
                     DragMove();
             }
 
-
             //Sets up Buttons for Complete items
-            /*            for (int i = 0; i < 45; i++)
-                        {
-                            Button compButton = new Button();
+            static Button[] buttonArr = new Button[45];
+            for (int i = 0; i < 45; i++)
+            {
+                Button completeButton = new Button();
+                buttonArr[i] = completeButton;
+                var brush = new ImageBrush(
+                            new BitmapImage(
+                            new Uri(@"C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\Images\Tear_of_the_Goddess.png", UriKind.Relative)));
+                //fix name to strings not just integer string
+                completeButton.Name = "completeItem_" + i.ToString();
+                /////////////////////////////////////////////
+                completeButton.Background = brush;
+                completeButton.Width = 50;
+                completeButton.Height = 50;
+                completeButton.Margin = new Thickness(3);
+                completeButton.BorderThickness = new Thickness(2);
+                completeButton.Visibility = Visibility.Collapsed;
+                Grid.SetColumn(completeButton, 0);
+                Grid.SetColumn(completeButton, 0);
 
-                            var brush = new ImageBrush(
-                                        new BitmapImage(
-                                        new Uri(@"C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\Images\Tear_of_the_Goddess.png", UriKind.Relative)));
+                CompletedItems.Children.Add(completeButton);
+            }
+        }
 
-                            compButton.Name = "Tear_of_the_Goddess_btn" + i.ToString();
-                            compButton.Background = brush;
-                            compButton.Width = 50;
-                            compButton.Height = 50;
-                            compButton.Margin = new Thickness(3);
-                            compButton.BorderThickness = new Thickness(2);
-                            Grid.SetColumn(compButton, (i%9)+2);
-                            Grid.SetRow(compButton, (i/9)+1);
-                            CompletedItems.Children.Add(compButton);
-                        }*/
+        private ItemChart itemChart = new ItemChart();
+        void componentItemClick(object sender, RoutedEventArgs e)
+        {
+            Button btn = (Button)sender;
+            int[] testArr = itemChart.GetItems();
+            switch (btn.Name)
+            {
+                case "B_F_Sword_btn":
+                    itemChart.AddItem(0);
+                    break;
+                case "Chain_Vest_btn":
+                    itemChart.AddItem(1);
+                    break;
+                case "Giants_Belt_btn":
+                    itemChart.AddItem(2);
+                    break;
+                case "Needlessly_Large_Rod_btn":
+                    itemChart.AddItem(3);
+                    break;
+                case "Negatron_Cloak_btn":
+                    itemChart.AddItem(4);
+                    break;
+                case "Recurve_Bow_btn":
+                    itemChart.AddItem(5);
+                    break;
+                case "Golden_Spatula_btn":
+                    itemChart.AddItem(6);
+                    break;
+                case "Tear_of_the_Goddess_btn":
+                    itemChart.AddItem(7);
+                    break;
+                case "Brawlers_Gloves_btn":
+                    itemChart.AddItem(8);
+                    break;
+            }
+            updateFullItems(buttonArr, testArr);
+        }
 
-            ItemChart itemChart = new ItemChart();
+        void updateFullItems(Button[] buttonArr, int[] componentItemArr)
+        {
+            int x = 1;
+            int y = 1;
+            for(int i = 0; i < 45; i++)
+            {
+                if (componentItemArr[i] > 0)
+                {
+                    Grid.SetColumn(buttonArr[i], x);
+                    Grid.SetRow(buttonArr[i], y);
+                    x++;
+                    if (x > 9)
+                    {
+                        x = 1;
+                        y++;
+                    }
+                    buttonArr[i].Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    buttonArr[i].Visibility = Visibility.Collapsed;
+                }
+            }
 
         }
 
         private string _boundState;
-        public string BoundNumber
+
+        public string BoundState
         {
-            get { return "True"; }
+            get { return "_boundState"; }
             set
             {
                 if (_boundState != value)
