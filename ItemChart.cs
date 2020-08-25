@@ -75,14 +75,16 @@ namespace TeamfightTacticsUI_CS_WPF
 
 		public void Reset()
 		{
-			foreach (int i in itemCount)
+			for(int i = 0; i < MAX_ITEM_COUNT-1; i++)
 			{
 				itemCount[i] = 0;
 			}
-			foreach (int i in fullitemCount)
+
+			for (int i = 0; i < MAX_FULL_ITEM_COUNT - 1; i++)
 			{
-				itemCount[i] = 0;
+				fullitemCount[i] = 0;
 			}
+
 			itemTotal = 0;
 			UpdateChart();
 		}
