@@ -15,6 +15,9 @@ namespace TeamfightTacticsUI_CS_WPF
     /// </summary>
     public partial class MainWindow : INotifyPropertyChanged
     {
+        private ItemChart itemChart = new ItemChart();
+        public static Button[] buttonArr = new Button[45];
+
         public MainWindow()
         {
             DataContext = this;
@@ -28,12 +31,11 @@ namespace TeamfightTacticsUI_CS_WPF
             }
 
             //Sets up Buttons for Complete items
-            static Button[] buttonArr = new Button[45];
             for (int i = 0; i < 45; i++)
             {
                 Button completeButton = new Button();
                 buttonArr[i] = completeButton;
-                var brush = new ImageBrush(
+                ImageBrush brush = new ImageBrush(
                             new BitmapImage(
                             new Uri(@"C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\Images\Tear_of_the_Goddess.png", UriKind.Relative)));
                 //fix name to strings not just integer string
@@ -47,16 +49,13 @@ namespace TeamfightTacticsUI_CS_WPF
                 completeButton.Visibility = Visibility.Collapsed;
                 Grid.SetColumn(completeButton, 0);
                 Grid.SetColumn(completeButton, 0);
-
                 CompletedItems.Children.Add(completeButton);
             }
         }
 
-        private ItemChart itemChart = new ItemChart();
         void componentItemClick(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
-            int[] testArr = itemChart.GetItems();
             switch (btn.Name)
             {
                 case "B_F_Sword_btn":
@@ -87,7 +86,7 @@ namespace TeamfightTacticsUI_CS_WPF
                     itemChart.AddItem(8);
                     break;
             }
-            updateFullItems(buttonArr, testArr);
+            updateFullItems(buttonArr, itemChart.GetItems());
         }
 
         void updateFullItems(Button[] buttonArr, int[] componentItemArr)
