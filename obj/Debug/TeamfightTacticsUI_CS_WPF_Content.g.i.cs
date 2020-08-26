@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("tftui_app_background.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/completeitem_8.png")]
 
 

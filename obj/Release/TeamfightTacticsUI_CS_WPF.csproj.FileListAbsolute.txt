@@ -1,0 +1,16 @@
+C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\bin\Release\TeamfightTacticsUI_CS_WPF.exe.config
+C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\bin\Release\TeamfightTacticsUI_CS_WPF.exe
+C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\bin\Release\TeamfightTacticsUI_CS_WPF.pdb
+C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\obj\Release\TeamfightTacticsUI_CS_WPF.csprojAssemblyReference.cache
+C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\obj\Release\MainWindow.g.cs
+C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\obj\Release\App.g.cs
+C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\obj\Release\TeamfightTacticsUI_CS_WPF_MarkupCompile.cache
+C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\obj\Release\TeamfightTacticsUI_CS_WPF_MarkupCompile.lref
+C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\obj\Release\MainWindow.baml
+C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\obj\Release\ResourceDictionary.baml
+C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\obj\Release\TeamfightTacticsUI_CS_WPF.g.resources
+C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\obj\Release\TeamfightTacticsUI_CS_WPF.Properties.Resources.resources
+C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\obj\Release\TeamfightTacticsUI_CS_WPF.csproj.GenerateResource.cache
+C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\obj\Release\TeamfightTacticsUI_CS_WPF.csproj.CoreCompileInputs.cache
+C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\obj\Release\TeamfightTacticsUI_CS_WPF.exe
+C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\obj\Release\TeamfightTacticsUI_CS_WPF.pdb

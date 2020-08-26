@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TeamfightTacticsUI_CS_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="676" ResizeMode="NoResize" Topmost="True" WindowStyle="None" AllowsTransparency="True" UseLayoutRounding="False" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+        Title="TFT Calculator" Height="500" Width="676" ResizeMode="NoResize" Topmost="True" WindowStyle="None" AllowsTransparency="True" UseLayoutRounding="False" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Icon="Molediver_Icon.ico">
     <Window.Background>
         <ImageBrush ImageSource="TFTUI_App_Background.png" Stretch="Uniform" AlignmentX="Left" AlignmentY="Top">
         </ImageBrush>

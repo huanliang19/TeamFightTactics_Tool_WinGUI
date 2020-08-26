@@ -6,9 +6,9 @@ using System.Windows;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("TeamfightTacticsUI_CS_WPF")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Tool used to manage TFT items")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("SpicyShrimpChips")]
 [assembly: AssemblyProduct("TeamfightTacticsUI_CS_WPF")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]

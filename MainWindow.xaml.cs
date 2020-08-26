@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 
 namespace TeamfightTacticsUI_CS_WPF
 {
@@ -36,9 +37,16 @@ namespace TeamfightTacticsUI_CS_WPF
                 Button completeButton = new Button();
                 buttonArr[i] = completeButton;
                 completeButton.Name = "completeItem_" + i.ToString();
-                ImageBrush brush = new ImageBrush(
-                            new BitmapImage(
-                            new Uri(@"C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\Images\" + completeButton.Name + ".png", UriKind.Relative)));
+                ImageBrush brush = new ImageBrush(new BitmapImage(new Uri(BaseUriHelper.GetBaseUri(this), "Images/" + completeButton.Name + ".png")));
+
+
+
+
+
+/*                                 new ImageBrush(
+                                   new BitmapImage(
+                                   new Uri(@"C:\Users\huanl\source\repos\TeamFightTactics_Tool_WinGUI\Images\" new ImageBrush(new BitmapImage(new Uri(BaseUriHelper.GetBaseUri(this), "Images/icon.png")))
+                                                                                                                                                                               ".png", UriKind.Relative)));*/
                 completeButton.Background = brush;
                 completeButton.Width = 50;
                 completeButton.Height = 50;
